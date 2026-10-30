@@ -1,0 +1,6 @@
+{
+  "name": "Warship DSA",
+  "description": "Tactical Warship Battleship game built as a Data Structures & Algorithms project, featuring 1P vs AI (Target & Hunt queue modes), 2P Pass & Play, and backtracking fleet deployment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

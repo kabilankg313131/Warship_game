@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DSA PROJECT CONCEPTS"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="Core Data Structures &amp; Algorithmic Strategies"
+            android:textColor="@color/text_subtitle"
+            android:textSize="13sp" />
+
+        <!-- 1. 2D Arrays / Matrices -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 2D Arrays / Matrices (Grid Representation)"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingExtra="3dp"
+            android:text="• Board represented via Array&lt;Array&lt;CellState&gt;&gt; with states: EMPTY, SHIP, HIT, MISS.\n• Time Complexity: O(1) direct coordinate access via matrix indices grid[row][col].\n• Space Complexity: O(N²) where N is board dimension (10x10 = 100 cells)."
+            android:textColor="@color/text_subtitle"
+            android:textSize="12sp" />
+
+        <!-- 2. Queue / Deque (FIFO BFS Target Mode) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Queue / Deque (Target Mode BFS)"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingExtra="3dp"
+            android:text="• Data Structure: ArrayDeque&lt;Coordinate&gt; used as a FIFO Queue.\n• Mechanism: Once a HIT occurs, the AI enqueues the 4 cardinal neighbors (North, South, East, West). In subsequent turns, targets are dequeued (FIFO) in breadth-first fashion.\n• Time Complexity: O(1) enqueue (addLast) and O(1) dequeue (removeFirst)."
+            android:textColor="@color/text_subtitle"
+            android:textSize="12sp" />
+
+        <!-- 3. Parity Heuristic in Hunt Mode -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Checkerboard Parity Algorithm (Hunt Mode)"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingExtra="3dp"
+            android:text="• Invariant: Smallest ship length is L = 2. Any contiguous 2-cell ship MUST intersect at least one coordinate where (row + col) % 2 == 0.\n• Optimization: Initial hunt space is pruned by 50% (from 100 cells to 50 parity cells)."
+            android:textColor="@color/text_subtitle"
+            android:textSize="12sp" />
+
+        <!-- 4. Recursive Backtracking -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Randomized Recursive Backtracking"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingExtra="3dp"
+            android:text="• 'RANDOM' placement solves the fleet constraint satisfaction problem.\n• Tries random valid positions for each ship; if a deadlock occurs, it backtracks, reverts the matrix cells to EMPTY, and tries alternative spatial branches."
+            android:textColor="@color/text_subtitle"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_close_dsa_guide"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/button_random_pill"
+            android:text="DISMISS"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

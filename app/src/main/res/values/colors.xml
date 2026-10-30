@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Slate Blue Backgrounds (from reference UI) -->
+    <color name="app_bg">#2F3C54</color>
+    <color name="app_bg_dark">#243144</color>
+    <color name="app_surface">#394B69</color>
+
+    <!-- Warm Terracotta & Sand Deck / Grid (from reference UI) -->
+    <color name="dock_bg">#FFA282</color>
+    <color name="dock_bg_soft">#FFB89E</color>
+    <color name="grid_board_bg">#FF8A65</color>
+    <color name="grid_cell_bg">#5A4238</color>
+    <color name="grid_cell_border">#443028</color>
+    <color name="grid_radar_cell_bg">#3E4E6B</color>
+    <color name="grid_radar_cell_border">#2C3B54</color>
+
+    <!-- Vivid Blue Action Pills (from reference UI) -->
+    <color name="button_blue">#1E88E5</color>
+    <color name="button_blue_pressed">#1565C0</color>
+    <color name="cyan_accent">#00E5FF</color>
+
+    <!-- Warship Coral & Detail (from reference UI) -->
+    <color name="ship_coral">#E85248</color>
+    <color name="ship_outline">#261A18</color>
+    <color name="hit_red">#FF1744</color>
+    <color name="hit_orange">#FF9100</color>
+    <color name="radar_green">#00E676</color>
+    <color name="miss_splash">#80DEEA</color>
+
+    <!-- Typography (from reference UI) -->
+    <color name="text_title">#FFFFFF</color>
+    <color name="text_subtitle">#A0B0C8</color>
+    <color name="text_muted">#7A8CA3</color>
+    <color name="dsa_purple">#B388FF</color>
+
+    <!-- Legacy / Compatibility -->
+    <color name="navy_950">#243144</color>
+    <color name="navy_900">#2F3C54</color>
+    <color name="navy_800">#394B69</color>
+    <color name="navy_700">#465B7D</color>
+    <color name="navy_600">#576F96</color>
+    <color name="navy_cell">#5A4238</color>
+    <color name="navy_cell_border">#443028</color>
+    <color name="ship_hull">#607D8B</color>
+    <color name="ship_active">#00E5FF</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A0B0C8</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
